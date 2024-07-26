@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Valindado Formulário</title>
+  <link rel="stylesheet" href="assents/css/style.css">
+</head>
+<body>
+  <main>
+    <h1>Formulário de cadastro</h1>
+
+    <ul>
+      <li>Nenhum campo pode estar vazio</li>
+      <li>Usuário só poderá conter letras e/ou números</li>
+      <li>O usuário deverá ter entre 3 e 12 caracteres</li>
+      <li>Senha precisa ter entre 6 a 12 caracteres</li>
+    </ul>
+
+    <form>
+      <div class="container">
+        <label for="name">Nome: </label>
+        <input type="text" name="name" id="name" autocomplete="off" class="valid">
+      </div>
+
+      <div class="container">
+        <label for="lastname">Sobrenome: </label>
+        <input type="text" name="lastname" id="lastname" autocomplete="off" class="valid">
+      </div>
+
+      <div class="container">
+        <label for="cpf">CPF:</label>
+        <input type="text" name="cpf" id="cpf" autocomplete="off" class="valid cpf">
+      </div>
+
+      <div class="container">
+        <label for="user">Usuário: </label>
+        <input type="text" name="user" id="user" autocomplete="off" class="valid user">
+      </div>
+
+      <div class="container">
+        <label for="password">Senha: </label>
+        <input type="password" name="password" id="password" class="valid password pass">
+      </div>
+
+      <div class="container">
+        <label for="repeatPassword">Repetir senha: </label>
+        <input type="password" name="repeatPassword" id="repeatPassword" class="valid repeatPassword pass">
+      </div>
+
+      <div class="checkbox">
+        <input type="checkbox" name="showPassword" id="showPassword">
+        <label for="showPassword">Mostrar senha</label>
+      </div>
+
+      <button type="submit">Enviar</button>
+    </form>
+  </main>
+  <script src="./assents/js/main.js"></script>
+</body>
+</html>
